@@ -7,7 +7,8 @@
   "types": "dist/src/index.d.ts",
   "scripts": {
     "clean": "rimraf dist",
-    "compile": "tsc --skipLibCheck && tstei",
+    "compile": "tsc --skipLibCheck",
+    "start": "npm run compile && node dist/src/bin/index.js",
     "compile:watch": "tsc --skipLibCheck --watch",
     "prepublishOnly": "npm run clean && npm run compile"
   },
@@ -46,7 +47,7 @@
     "prettysize": "^0.1.0",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
-    "specialist": "^0.3.0",
+    "specialist": "^0.4.0",
     "temp": "^0.8.3",
     "torrent-search-api": "^2.0.3",
     "webtorrent-cli": "github:fabioespinosa/webtorrent-cli#iina-pip"
