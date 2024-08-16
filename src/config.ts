@@ -4,9 +4,7 @@
 import * as _ from 'lodash';
 import * as fs from 'fs';
 import * as JSON5 from 'json5';
-import * as localeCode from 'locale-code';
 import * as os from 'os';
-import * as osLocale from 'os-locale';
 import * as path from 'path';
 import {color} from 'specialist';
 import prompt from 'inquirer-helpers';
@@ -75,13 +73,13 @@ function initPrompt () {
 
 function initLocale () {
 
-  const locale = osLocale.sync ().replace ( '_', '-' ),
-        languageName = localeCode.getLanguageName ( locale ),
-        language = Config.subtitles.languages.available.find ( language => language.startsWith ( languageName ) );
+  // const locale = osLocale.sync ().replace ( '_', '-' ),
+  //       languageName = localeCode.getLanguageName ( locale ),
+  //       language = Config.subtitles.languages.available.find ( language => language.startsWith ( languageName ) );
 
-  if ( !language ) return;
+  // if ( !language ) return;
 
-  Config.subtitles.languages.favorites = _.uniq ([ language, ...Config.subtitles.languages.favorites ]);
+  // Config.subtitles.languages.favorites = _.uniq ([ language, ...Config.subtitles.languages.favorites ]);
 
 }
 

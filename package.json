@@ -49,13 +49,13 @@
     "specialist": "^0.3.0",
     "temp": "^0.8.3",
     "torrent-search-api": "^2.0.3",
-    "webtorrent-cli": "github:fabiospampinato/webtorrent-cli#iina-pip"
+    "webtorrent-cli": "github:fabioespinosa/webtorrent-cli#iina-pip"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.118",
     "@types/node": "^10.12.8",
     "rimraf": "^2.6.2",
-    "typescript": "~3.0.3",
+    "typescript": "^5.5.4",
     "typescript-transform-export-interop": "^1.0.1"
   },
   "engines": {
